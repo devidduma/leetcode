@@ -14,5 +14,6 @@ A comprehensive collection of refined, performant and efficient LeetCode solutio
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[C#](solutions/4-median-of-two-sorted-arrays.cs)|Hard|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[C#](solutions/5-longest-palindromic-substring.cs)|Medium|
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[C#](solutions/15-3sum.cs)|Medium|
+|16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[C#](solutions/16-3sum-closest.cs)|Medium|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[C#](solutions/1071-greatest-common-divisor-of-strings.cs)|Easy|
 |1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|[C#](solutions/1768-merge-strings-alternately.cs)|Easy|
