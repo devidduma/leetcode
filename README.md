@@ -11,3 +11,4 @@ A comprehensive collection of refined, performant and efficient LeetCode solutio
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[C#](solutions/4-median-of-two-sorted-arrays.cs)|Hard|
+|1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[C#](solutions/1071-greatest-common-divisor-of-strings.cs)|Easy|
