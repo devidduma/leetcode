@@ -10,6 +10,7 @@ A comprehensive collection of refined, performant and efficient LeetCode solutio
 ## Content
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[C#](solutions/3-longest-substring-without-repeating-characters.cs)|Medium|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[C#](solutions/4-median-of-two-sorted-arrays.cs)|Hard|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[C#](solutions/5-longest-palindromic-substring.cs)|Medium|
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[C#](solutions/15-3sum.cs)|Medium|
