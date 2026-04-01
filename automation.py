@@ -50,7 +50,7 @@ def update_readme(source, destination, rows, placeholder='$PLACEHOLDER$'):
 
 if __name__ == "__main__":
 
-    ids = []
+    ids = [4]
 
     create_files = True
 
