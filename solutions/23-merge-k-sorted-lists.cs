@@ -18,49 +18,38 @@ public class MergeKSortedListsSolution
         ListNode result = null;
         ListNode resultLast = null;
         
-        // Counter of empty lists
-        var emptyListsCount = 0;
+        // Priority Queue arrangement of ListNodes
+        var priorityQueue = new PriorityQueue<ListNode, int>();
 
-        while (emptyListsCount < lists.Length)
+        for (int i = 0; i < lists.Length; i++)
         {
-            // Current minimum
-            var min = int.MaxValue;
-            var minIndex = 0;
-            
-            // Reset counter of empty lists
-            emptyListsCount = 0;
-        
-            // Find current minimum
-            for (int i = 0; i < lists.Length; i++)
+            if (lists[i] != null)
             {
-                if (lists[i] == null)
-                {
-                    emptyListsCount += 1;
-                    continue;
-                }
-                else if (lists[i].val < min)
-                {
-                    min = lists[i].val;
-                    minIndex = i;
-                }
+                priorityQueue.Enqueue(lists[i], lists[i].val);
             }
+        }
         
+        // Construct result from Priority Queue
+        while (priorityQueue.Count > 0)
+        {
+            var minListNode = priorityQueue.Dequeue();
+            
             // Add current minimum to result
             if (result == null)
             {
-                result = lists[minIndex];
+                result = minListNode;
                 resultLast = result;
             }
             else
             {
-                resultLast.next = lists[minIndex];
+                resultLast.next = minListNode;
                 resultLast = resultLast.next;
             }
-        
-            // Update current element in list
-            if (emptyListsCount < lists.Length)
+            
+            // Add next list node to Priority Queue
+            if (minListNode.next != null)
             {
-                lists[minIndex] = lists[minIndex].next;
+                priorityQueue.Enqueue(minListNode.next, minListNode.next.val);
             }
         }
         
