@@ -17,5 +17,6 @@ A comprehensive collection of refined, performant and efficient LeetCode solutio
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[C#](solutions/16-3sum-closest.cs)|Medium|
 |18|[4Sum](https://leetcode.com/problems/4sum/)|[C#](solutions/18-4sum.cs)|Medium|
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[C#](solutions/23-merge-k-sorted-lists.cs)|Hard|
+|25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|[C#](solutions/25-reverse-nodes-in-k-group.cs)|Hard|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[C#](solutions/1071-greatest-common-divisor-of-strings.cs)|Easy|
 |1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|[C#](solutions/1768-merge-strings-alternately.cs)|Easy|
