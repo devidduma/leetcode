@@ -11,12 +11,14 @@ public class ReverseNodesInKGroupSolution
             return head;
         }
         
-        // Priority Queue arrangement of ListNodes
-        var priorityQueue = new PriorityQueue<(ListNode, ListNode), int>();
-
+        // Index of node in list
         var index = -1;
+        
+        // Segment of reversed nodes in K-Group
         ListNode segment = null;
         ListNode segmentLast = null;
+        
+        // Rest nodes
         ListNode restNodes = null;
         var restNodesIndex = index;
         
@@ -38,34 +40,34 @@ public class ReverseNodesInKGroupSolution
             // Last element of segment
             else if (index % k == k - 1)
             {
-                // Add segment to Priority Queue
-                priorityQueue.Enqueue((segment, segmentLast), index);
+                // Add segment to result
+                if (result == null)
+                {
+                    result = segment;
+                    resultLast = segmentLast;
+                }
+                else
+                {
+                    resultLast.next = segment;
+                    resultLast = segmentLast;
+                }
+                
+                // Reset segment
                 segment = null;
             }
         }
         
-        // Construct result from Priority Queue
-        while (priorityQueue.Count > 0)
+        // Add rest nodes in the end
+        if (index - restNodesIndex + 1 < k)
         {
-            var (minSegment, minSegmentLast) = priorityQueue.Dequeue();
-            
-            // Add current minimum to result
-            if (result == null)
+            if (resultLast == null)
             {
-                result = minSegment;
-                resultLast = minSegmentLast;
+                result = restNodes;
             }
             else
             {
-                resultLast.next = minSegment;
-                resultLast = minSegmentLast;
+                resultLast.next = restNodes;
             }
-        }
-        
-        // Rest nodes in the end
-        if (index - restNodesIndex + 1 < k)
-        {
-            resultLast.next = restNodes;
         }
         
         return result;
