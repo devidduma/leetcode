@@ -19,5 +19,6 @@ A comprehensive collection of refined, performant and efficient LeetCode solutio
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[C#](solutions/23-merge-k-sorted-lists.cs)|Hard|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[C#](solutions/24-swap-nodes-in-pairs.cs)|Medium|
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|[C#](solutions/25-reverse-nodes-in-k-group.cs)|Hard|
+|33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[C#](solutions/33-search-in-rotated-sorted-array.cs)|Medium|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[C#](solutions/1071-greatest-common-divisor-of-strings.cs)|Easy|
 |1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|[C#](solutions/1768-merge-strings-alternately.cs)|Easy|
